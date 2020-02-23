@@ -20,7 +20,7 @@ header {
     height: 70px;
     position: fixed;
     top: 0;
-    border-bottom: yellow solid 10px;
+    border-bottom: yellow solid 5px;
 }
 
 .ListBox {
@@ -66,7 +66,7 @@ header {
 
 main {
     margin-top: 100px;
-    margin-bottom: 100px;
+
 }
 
 .MainWrapper {
@@ -79,7 +79,7 @@ main {
                         "JobsJudul JobsJudul JobsJudul"
                         "Jobs Timeline JobDesc";
     */
-    grid-template-rows: 400px 150px 200px 300px;
+    grid-template-rows: 400px 150px 200px 400px;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-gap: 50px;
 
@@ -135,18 +135,20 @@ main {
     color: white;
     font-family: sans-serif;
     text-align: center;
-    border-bottom: #61CAE6 solid 3px;
     font-size: 20px;
 }
 
+
 .JobJudul {
     margin-top: 50px;
+    align-items: center;
     grid-row-start: 3;
     grid-column: 1 / 6;
     font-family: 'Heebo', sans-serif;
     font-size: 50px;
     color: white;
     text-align: center;
+    border-top: #61CAE6 solid 10px;
 }
 
 .Job1 {
@@ -167,7 +169,7 @@ main {
 .Jobs {
     margin-top: 10px;
     font-family: 'Heebo', sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     text-align: center;
 }
@@ -180,6 +182,10 @@ main {
     border-bottom: #61CAE6 solid;
 }
 
+.Timeline {
+    color: yellow;
+}
+
 /* Bagian Footer */
 
 #Footer {
@@ -188,7 +194,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: 240px;
-    border-top: yellow solid 10px;
+    border-top: yellow solid 5px;
 }
 
 .Grid1 {
