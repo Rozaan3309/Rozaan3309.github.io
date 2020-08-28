@@ -1,140 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="RozaanCV.css">
-        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Romi | Web Developer</title>
+        <meta name="author" content="Romi Fauzaan">
+        <meta name="description" content="This is my portfolio website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     </head>
-
     <body>
 
-        <div id="Page-Container">
-        
-            <header id="Header">
-                <nav>
-                    <ul class="ListBox">
-                        <li class="Home LinkList"><a href="#">Home</a></li>
-                        <li class="Education LinkList"><a href="#">Education</a></li>
-                        <li class="Skill LinkList"><a href="#">Skill</a></li>
-                        <li class="Portfolio LinkList"><a href="#">Portfolio</a></li>
-                    </ul>
-
-                    <!--
-                    <p><a href="#">Home</a></p>
-                    <p><a href="#">Education</a></p>
-                    <p><a href="#">Skill</a></p>
-                    <p><a href="#">Portfolio</a></p>
-                    -->
-                </nav>
-
-            </header>
-
-            <main id="Main">
-                <div class="MainWrapper">
-                    <div class="ProfilePict">
-                        <img src="Images/Profile.JPG" alt="Profile Picture">
-                    </div>
-
-                    <div class="Name">
-                        <h1>Romi Fauzaan</h1>
-                    </div>
-
-                    <div class="Mastery">
-                        <h1>Graphic Designer</h1>
-                        <h1>3D Artist</h1>
-
-                    </div>
-
-                    <div class="Desc">
-                        <p>"Hello, my name is Romi Fauzaan, i'm graduated from a vocational high school focused on multimedia. 
-                            I'm proficient with Graphic Designing and 3D Modelling, using Adobe Softwares like Photoshop, 
-                            Illustrator, Premiere, After Effects and Blender for 3D. I also have a basic skill with HTML and CSS.<br>
-                            <br>
-                            <span>I always eager to learn new things and always honing my Graphic Designing and Programming skills 
-                            to be the best out there. I can work as an individual or as a team, and interested with new people."</span></p>
-                    </div>
-
-                    <div class="JobJudul">
-                        <h1>Working Experience</h1>
-                    </div>
-
-                    <div class="Job1 Jobs">
-                        <div class="Underline">
-                            <h2 class="JobName">TRAFFIK Creative</h2>
-                        </div>
-                        <br>
-                        <p>"As a Graphic Designer for 2 months<br>Designing various things<br>like wallpaper and name card<br>Handling many big clients like Lazada"</p>
-                        <p class="Timeline">From January 2018 - March 2018</p>
-                    </div>
-
-                    <div class="Job2 Jobs">
-                        <div class="Underline">
-                            <h2 class="JobName">JasaFotoJakarta.com</h2>
-                        </div>
-                        <br>
-                        <p>"As a Photo Editor for 2 months<br>Retouching photos like food and models<br>Handling many big clients and famous<br>celebrity like Citilink and Baim Wong"</p>
-                        <p class="Timeline">From August 2019 - October 2019</p>
-                    </div>
-
-                    <div class="Job3 Jobs">
-                        <div class="Underline">
-                            <h2 class="JobName">PT. Mindreach Consulting</h2>
-                        </div>
-                        <br>
-                        <p>"As a Photo Editor for 4 months<br>Cropping and Retouching models<br>Handling many clients from worldwide"</p>
-                        <p class="Timeline">From October 2019 - February 2020</p>
-                    </div>
-
+        <header id="header">
+            <div class="logoContainer" >
+                <img onclick="window.location.href='#brief'" id="Logo" src="./Assets/Logo_with_Title.png" />
+            </div>
+            <div class="navbar">
+                <div  id="about-navPoint" class="navPoint-container">
+                    <a class="navPoint" href="#about">About</a>
+                    <div id="about-line" class="underline"></div>
                 </div>
-            </main>
-
-            <footer id="Footer">
-                <div class="Grid1 Grid">
-
-                    <p class="Judul">Contact</p>
-                    <br>
-                    <br>
-                    <p>rozaan3309@gmail.com</p>
-                    <br>
-                    <p>rozaan_3309@yahoo.com</p>
-                    <br>
-                    <p>+628979388299</p>
-                    <br>
-                    <p>+6288211845229</p>
-
+                <div  id="portfolio-navPoint" class="navPoint-container">
+                    <a class="navPoint" href="#projects">Projects</a>
+                    <div id="portfolio-line" class="underline"></div>
                 </div>
+                <div  id="contact-navPoint" class="navPoint-container">
+                    <a class="navPoint" href="#contact">Contact</a>
+                    <div id="contact-line" class="underline"></div>
+                </div>
+            </div>
+        </header>
 
-                <div class="Grid2 Grid">
-                    <p class="Judul">Address</p>
-                    <p>(Click to view the Map)</p>
-                    <br>
-                    <p><a target="_blank" href="https://www.google.co.id/maps/place/Jl.+Bunga+III+Blok+B.+16+No.7,+Pd.+Aren,+Kec.+Pd.+Aren,+Kota+Tangerang+Selatan,+Banten+15224/@-6.2611821,106.7198966,19z/data=!3m1!4b1!4m5!3m4!1s0x2e69fa7e2cbc1ce7:0x303a2b8ff3dc0e2f!8m2!3d-6.2611834!4d106.7204438?hl=id">
-                        Taman Mangu Indah Residence<br>Jl. Bunga III Blok B.16 No.7 Pd. Aren,<br>Tangerang Selatan, Banten 15224
-                        </a>
-                    </p>
+        <div class="spacer"></div>
+
+        <section id="brief" class="sections">
+            <h1 class="brief-title-main">Hello!</h1>
+            <h1 class="brief-title-second">I'm <span>Romi</span>, nice to meet you!</h1>
+            <h2 class="brief-title-third">Let's create a <span>nice Website!</span></h2>
+            <div class="buttons-container">
+                <div class="single-button-wrapper">
+                    <button id="toAboutBTN" class="buttons" onclick="window.location.href='#about'">Tell me more about you</button>
+                </div>
+                <div class="single-button-wrapper">
+                    <button id="toPortfolioBTN" class="buttons" onclick="window.location.href='#projects'">Let's see your portfolio first</button>
+                </div>
+                <div class="single-button-wrapper">
+                    <button id="toContactBTN" class="buttons" onclick="window.location.href='#contact'">I want to ask more</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="sections">
+            <div class="about-box">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-description">
+                    My name is <span>Romi Fauzaan</span>, I'm <span id="age">19</span> years old, I live in <span>Indonesia</span>.<br><br>
+
+                    I'm interested in programming since I was in Junior High School, but I have no idea where to start, <br>
+                    so I'm searching on google and discovering C#. Unfortunately, I'm having a hard time <br>
+                    learning C# because my English skill isn't decent enough back then, so I stop learning C# <br>
+                    and focus on learning English, and promise that I will learn C# again later.<br><br>
+
+                    After graduating from Junior High School, I decided to apply to Vocational High School <br>
+                    and majored in <span>Multimedia</span>. I've learned about <span>Graphic Design</span> and a little bit about making <br>
+                    a static website using <span>HTML and CSS</span>, and I was more curious about learning Website Development. <br><br>
+
+                    And after graduating from Vocational High School, I decided to join Fullstack Web Developer Bootcamp <br>
+                    from Hacktiv8 Indonesia. I was very excited, knowing that I'm serious about learning Website Development.<br>
+                    It was very tough, but I managed to follow the Bootcamp until the end of the course.<br><br>
                     
+                    I have learned how to make a full working website using HTML, CSS, and vanilla Javascript. <br>
+                    I also learned many Javascript Frameworks, libraries, and Database Management Systems such as : <br>
+                    <span>React.js, React Native, Vue.js, Jquery, Redux, GraphQL, Express.js, PostgreSQL, and MongoDB.</span><br><br>
+
+                    And because I'm majored in Multimedia, i have a basic knowledge of UI/UX Design, Graphic Design, and Video Editing.<br>
+                    Using <span>Adobe Photoshop, Illustrator, After Effects, and Premiere.</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="sections">
+            <h2 class="projects-section-title">My Projects</h2>
+            <p id="projectsNote" class="projects-section-note">hover for detail</p>
+            <div class="projects-container">
+                <div id="MasterRace" class="project-container">
+                    <div class="project-desc-container">
+                        <h1 class="project-title">Master Race Heaven E-Commerce</h1>
+                        <div class="project-stack-list">
+                            <p class="project-stack">Vue.js</p>
+                            <p class="project-stack">Express.js</p>
+                            <p class="project-stack">PostgreSQL</p>
+                        </div>
+                        <p class="project-desc">
+                            E-commerce website specialize in computer hardware parts.
+                        </p>
+                        <div class="project-buttons">
+                            <button class="visit-button" onclick="window.open('https://master-race-heaven.web.app','_blank');" >Visit</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="Grid3 Grid">
-                    <p class="Judul">Social</p>
-                    <br>
-                    <br>
-                    <p class="SocialP"><a target="_blank" href="https://www.linkedin.com/in/romi-fauzaan-504290184/">Linkedin</a></p>
-                    <br>
-                    <p class="SocialP"><a target="_blank" href="https://www.instagram.com/rozaan_3309/?hl=id">Instagram</a></p>
-                    <br>
-                    <p class="SocialP"><a target="_blank" href="https://github.com/Rozaan3309">Github</a></p>
-
-
-
+                <div id="MasterRaceCMS" class="project-container">
+                    <div class="project-desc-container">
+                        <h1 class="project-title">CMS for Master Race Heaven</h1>
+                        <div class="project-stack-list">
+                            <p class="project-stack">Vue.js</p>
+                            <p class="project-stack">Express.js</p>
+                            <p class="project-stack">PostgreSQL</p>
+                        </div>
+                        <p class="project-desc">
+                            Content Management System for Master Race Heaven.<br>
+                            You can add or edit the products, and it will appear on Master Race Heaven.<br>
+                            Email: <span>rozaan5555@yahoo.com</span><br>
+                            Password: <span>12345678</span>
+                        </p>
+                        <div class="project-buttons">
+                            <button class="visit-button" onclick="window.open('https://master-race-heaven-cms.web.app','_blank');" >Visit</button>
+                        </div>
+                    </div>
                 </div>
+                <div id="HackGram" class="project-container">
+                    <div class="project-desc-container">
+                        <h1 class="project-title">Hack-Gram</h1>
+                        <div class="project-stack-list">
+                            <p class="project-stack">Vue.js</p>
+                            <p class="project-stack">Express.js</p>
+                            <p class="project-stack">PostgreSQL</p>
+                        </div>
+                        <p class="project-desc">
+                            Instagram-like App where you can post something with image and caption.<br>
+                            Email: <span>user1@email.com</span><br>
+                            Password: <span>userpass</span>                            
+                        </p>
+                        <div class="project-buttons">
+                            <button class="visit-button" onclick="window.open('https://hack-gram.web.app','_blank');" >Visit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </footer>
-        </div>
+        <section id="contact" class="sections">
+            <h2 class="contact-section-title">Contact Me</h2>
+            <p class="contact-note">
+                You can send me an email at <span>rozaan3309@gmail.com</span>
+            </p>
+            <p class="contact-note">
+                Or visit me at :
+            </p>
+            <div class="contacts-container">
+                <div id="contact-linkedin" class="contact-container" onclick="window.open('https://www.linkedin.com/in/romi-fauzaan-3309','_blank');">
+                    <img id="linkedin-Logo" class="contact-logo" src="./Assets/LinkedIn-Logo.svg" alt="LinkedIn Logo" />
+                    <p id="contact-title-linkedin" class="contact-title">
+                        LinkedIn
+                    </p>
+                </div>
+                <div id="contact-github" class="contact-container" onclick="window.open('https://github.com/Rozaan3309','_blank');">
+                    <img id="github-logo" class="contact-logo" src="./Assets/Github-Mark.svg" alt="Github Logo" />
+                    <p id="contact-title-github" class="contact-title">
+                        Github
+                    </p>
+                </div>
+            </div>
+            <p class="copyright-text">© Romi Fauzaan</p>
+        </section>
+
+        <script async defer src="./index.js"></script>
 
     </body>
-
 </html>
