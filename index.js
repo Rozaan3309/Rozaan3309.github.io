@@ -11,6 +11,9 @@ let aboutSection = document.getElementById('toAboutBTN') // here your current ta
 let portfolioSection = document.getElementById('toPortfolioBTN')
 let contactSection = document.getElementById('toContactBTN')
 
+let currentDate = new Date
+let myAge = document.getElementById('age').innerHTML = (currentDate.getFullYear() - 2001)
+
 let projectsNote = document.getElementById('projectsNote')
 
 if (screenHeight > screenWidth) {
