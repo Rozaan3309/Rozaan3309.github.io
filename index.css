@@ -13,6 +13,9 @@ body {
     position: relative;
 }
 
+
+
+
 #header {
     background-image: linear-gradient(to bottom right, #333947,#606a81);
     display: flex;
